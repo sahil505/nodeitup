@@ -1,1 +1,3 @@
-exports.m1 = 1;
+module.exports = function() {
+	console.log('module2, bitch!');
+};
