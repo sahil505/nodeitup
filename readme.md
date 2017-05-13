@@ -6,7 +6,7 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
  - utilities on your machine
  - a web server (express, koa)
 
- - some super-basicsgit 
+ - some super-basics
   - how modules work
   - npm modules
   - make a basic web server
@@ -26,3 +26,8 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
   - run npm install backbone -S
   - run npm install underscore -S
   - you'll now see underscore and backbone as dependencies in your package.json.
+  - if you delete your node_modules folder just run the command npm install it will get it back
+
+- http package (basic web-server)
+ - it comes built in inside node
+ - 
