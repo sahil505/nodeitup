@@ -60,9 +60,16 @@
 
   	printFirstName: function(){
   		console.log("My name is Sahil");
-  		console.log(this === "sahil");
+  		console.log(this === sahil);
   	}
 
   };
 
   sahil.printFirstName();
+
+  function dosomething(){
+    console.log("My second name is khokhar");
+    console.log(this === global);
+  }
+
+dosomething();
