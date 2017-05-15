@@ -34,3 +34,4 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
 
 - We know that js code runs on our browser console. While for nodejs it runs on our command prompt/bash i:e on our server.
 
+- nodejs is incredibly fast and efficient for real time applications such as social network websites where a lot of requests come in at onece so nodejs can handle them better and more efficiently by taking way less time to respond.
