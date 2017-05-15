@@ -53,5 +53,16 @@
   // person1.favFood = "sandwhich";
   // console.log(person.favFood);
 
-  console.log(5+3 == "8");
-  console.log(8 === "8");
+  // console.log(5+3 == "8");
+  // console.log(8 === "8");
+
+  var sahil = {
+
+  	printFirstName: function(){
+  		console.log("My name is Sahil");
+  		console.log(this === "sahil");
+  	}
+
+  };
+
+  sahil.printFirstName();
