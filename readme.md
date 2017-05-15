@@ -31,3 +31,6 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
 - http package (basic web-server)
  - it comes built in inside node
  - 
+
+- We know that js code runs on our browser console. While for nodejs it runs on our command prompt/bash i:e on our server.
+
