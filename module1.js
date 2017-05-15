@@ -19,3 +19,4 @@ var printBacon = function(){
 };
 
 printBacon();
+setTimeout(printBacon, 5000);
