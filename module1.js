@@ -21,23 +21,33 @@
 // printBacon();
 // setTimeout(printBacon, 5000);
 
-function placeOrder (orderNumber) {
+// function placeOrder (orderNumber) {
 
-	console.log("Customer order number:", orderNumber);
+// 	console.log("Customer order number:", orderNumber);
 
-	cookAndDeliverFood(function(){
-		console.log("Delivered food order number:", orderNumber);
-	})
-}
+// 	cookAndDeliverFood(function(){
+// 		console.log("Delivered food order number:", orderNumber);
+// 	})
+// }
 
 
-//Simulate a 5 sec operation
-function cookAndDeliverFood(callback){
-	setTimeout(callback, 5000);
-}
+// //Simulate a 5 sec operation
+// function cookAndDeliverFood(callback){
+// 	setTimeout(callback, 5000);
+// }
 
-placeOrder(1);
-placeOrder(2);
-placeOrder(3);
-placeOrder(4);
-placeOrder(5);
+// placeOrder(1);
+// placeOrder(2);
+// placeOrder(3);
+// placeOrder(4);
+// placeOrder(5);
+
+  var person = {
+  	favFood: "cookies",
+  	favCity: "london"
+  };
+
+  var person1 = person;//this is not creating a copy, it is just reffering to that particular obeject
+
+  person1.favFood = "sandwhich";
+  console.log(person.favFood);
