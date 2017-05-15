@@ -8,8 +8,14 @@
 
 // console.log(person);
 
-function addnumbers(a, b){
-	return a + b;
-}
+// function addnumbers(a, b){
+// 	return a + b;
+// }
 
-console.log(addnumbers(2, 3));
+// console.log(addnumbers(2, 3));
+
+var printBacon = function(){
+	console.log("Hey there, what is up?");
+};
+
+printBacon();
