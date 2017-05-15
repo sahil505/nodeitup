@@ -42,12 +42,16 @@
 // placeOrder(4);
 // placeOrder(5);
 
-  var person = {
-  	favFood: "cookies",
-  	favCity: "london"
-  };
+  // var person = {
+  // 	favFood: "cookies",
+  // 	favCity: "london"
+  // };
 
-  var person1 = person;//this is not creating a copy, it is just reffering to that particular obeject
+  // var person1 = person;//this is not creating a copy, 
+  // //it is just reffering to that particular object
 
-  person1.favFood = "sandwhich";
-  console.log(person.favFood);
+  // person1.favFood = "sandwhich";
+  // console.log(person.favFood);
+
+  console.log(5+3 == "8");
+  console.log(8 === "8");

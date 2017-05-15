@@ -35,3 +35,7 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
 - We know that js code runs on our browser console. While for nodejs it runs on our command prompt/bash i:e on our server.
 
 - nodejs is incredibly fast and efficient for real time applications such as social network websites where a lot of requests come in at onece so nodejs can handle them better and more efficiently by taking way less time to respond.
+
+- in nodejs everything is a reference. check one of the commits to see in detail.
+
+- mystery behind '==' & '===' signs. '==' are used when you are comparing the number values of two quatities. for eg: 19 == '19', this is gonna return true. Whereas '===' are used to compare values as well as types. for eg 19 = "19" is gonna return false.
