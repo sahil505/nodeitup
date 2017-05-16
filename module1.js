@@ -94,3 +94,13 @@ lava.name = "Lavanya"
 sahil.giveLife(lava);
 console.log("Sahil Lives: " + sahil.life);
 console.log("Lavanya Lives: " + lava.life);
+
+//You can add functions to all objects
+User.prototype.uppercut = function uppercut(targetPlayer){
+  targetPlayer.life -= 3;
+  console.log(this.name + " just uppercutted " + targetPlayer.name);
+}
+
+sahil.uppercut(lava);
+console.log("Sahil Lives: " + sahil.life);
+console.log("Lavanya Lives: " + lava.life);
