@@ -60,13 +60,15 @@
 
   	printFirstName: function(){
   		console.log("My name is Sahil");
-  		console.log(this === sahil);
+  		console.log(this === sahil);//this is referrence to 
+      //whatever thing is calling it! In this case sahil object is calling it
   	}
 
   };
 
   sahil.printFirstName();
-
+  
+//default calling context is global
   function dosomething(){
     console.log("My second name is khokhar");
     console.log(this === global);
