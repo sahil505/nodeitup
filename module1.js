@@ -104,3 +104,8 @@ User.prototype.uppercut = function uppercut(targetPlayer){
 sahil.uppercut(lava);
 console.log("Sahil Lives: " + sahil.life);
 console.log("Lavanya Lives: " + lava.life);
+
+//you can add properties to all objects
+User.prototype.magic = 60;
+console.log(sahil.magic);
+console.log(lava.magic);
