@@ -56,22 +56,41 @@
   // console.log(5+3 == "8");
   // console.log(8 === "8");
 
-  var sahil = {
+//   var sahil = {
 
-  	printFirstName: function(){
-  		console.log("My name is Sahil");
-  		console.log(this === sahil);//this is referrence to 
-      //whatever thing is calling it! In this case sahil object is calling it
-  	}
+//   	printFirstName: function(){
+//   		console.log("My name is Sahil");
+//   		console.log(this === sahil);//this is referrence to 
+//       //whatever thing is calling it! In this case sahil object is calling it
+//   	}
 
-  };
+//   };
 
-  sahil.printFirstName();
-  
-//default calling context is global
-  function dosomething(){
-    console.log("My second name is khokhar");
-    console.log(this === global);
+//   sahil.printFirstName();
+
+// //default calling context is global
+//   function dosomething(){
+//     console.log("My second name is khokhar");
+//     console.log(this === global);
+//   }
+
+// dosomething();
+
+function User(){
+  this.name = "";
+  this.life = 100;
+  this.giveLife = function giveLife(targetPlayer){
+    targetPlayer.life += 1;
+    console.log(this.name + " gave 1 life to " + targetPlayer.name);
   }
+}
 
-dosomething();
+var sahil = new User();
+var lava = new User();
+
+sahil.name = "Sahil"
+lava.name = "Lavanya"
+
+sahil.giveLife(lava);
+console.log("Sahil Lives: " + sahil.life);
+console.log("Lavanya Lives: " + lava.life);
