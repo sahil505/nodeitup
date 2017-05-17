@@ -39,3 +39,7 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
 - in nodejs everything is a reference. check one of the commits to see in detail.
 
 - mystery behind '==' & '===' signs. '==' are used when you are comparing the number values of two quatities. for eg: 19 == '19', this is gonna return true. Whereas '===' are used to compare values as well as types. for eg 19 = "19" is gonna return false.
+
+-prototyping
+ - you can add functions to objects from outside the object as well, to any object whatsoever.
+ - you can add properties to objects from outside the object.
