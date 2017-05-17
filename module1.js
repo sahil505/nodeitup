@@ -130,3 +130,17 @@ sahil.giveLife(lava);
 
 console.log("Sahil's lives: " + sahil.life);
 console.log("Lavanya's lives: " + lava.life);
+
+User.prototype.uppercut = function uppercut(targetPlayer){
+  targetPlayer.life -= 3;
+  console.log(this.name + " just uppercutted " + targetPlayer.name);
+}
+
+lava.uppercut(sahil);
+console.log("Sahil's lives: " + sahil.life);
+console.log("Lavanya's lives: " + lava.life);
+
+User.prototype.magic = 60;
+
+console.log(sahil.magic);
+console.log(lava.magic);
