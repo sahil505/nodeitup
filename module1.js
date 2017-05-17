@@ -76,71 +76,74 @@
 
 // dosomething();
 
-function User(){
-  this.name = "";
-  this.life = 100;
-  this.giveLife = function giveLife(targetPlayer){
-    targetPlayer.life += 1;
-    console.log(this.name + " gave 1 life to " + targetPlayer.name);
-  }
-}
+// function User(){
+//   this.name = "";
+//   this.life = 100;
+//   this.giveLife = function giveLife(targetPlayer){
+//     targetPlayer.life += 1;
+//     console.log(this.name + " gave 1 life to " + targetPlayer.name);
+//   }
+// }
 
-var sahil = new User();
-var lava = new User();
+// var sahil = new User();
+// var lava = new User();
 
-sahil.name = "Sahil"
-lava.name = "Lavanya"
+// sahil.name = "Sahil"
+// lava.name = "Lavanya"
 
-sahil.giveLife(lava);
-console.log("Sahil Lives: " + sahil.life);
-console.log("Lavanya Lives: " + lava.life);
+// sahil.giveLife(lava);
+// console.log("Sahil Lives: " + sahil.life);
+// console.log("Lavanya Lives: " + lava.life);
 
-//You can add functions to all objects
-User.prototype.uppercut = function uppercut(targetPlayer){
-  targetPlayer.life -= 3;
-  console.log(this.name + " just uppercutted " + targetPlayer.name);
-}
+// //You can add functions to all objects
+// User.prototype.uppercut = function uppercut(targetPlayer){
+//   targetPlayer.life -= 3;
+//   console.log(this.name + " just uppercutted " + targetPlayer.name);
+// }
 
-sahil.uppercut(lava);
-console.log("Sahil Lives: " + sahil.life);
-console.log("Lavanya Lives: " + lava.life);
+// sahil.uppercut(lava);
+// console.log("Sahil Lives: " + sahil.life);
+// console.log("Lavanya Lives: " + lava.life);
 
-//you can add properties to all objects
-User.prototype.magic = 60;
-console.log(sahil.magic);
-console.log(lava.magic);
+// //you can add properties to all objects
+// User.prototype.magic = 60;
+// console.log(sahil.magic);
+// console.log(lava.magic);
 
-function User(){
-  this.name = "";
-  this.life = 100;
-  this.giveLife = function giveLife(targetPlayer){
-    targetPlayer.life += 1;
-    console.log(this.name + " gave 1 life to " + targetPlayer.name);
-  }
+// function User(){
+//   this.name = "";
+//   this.life = 100;
+//   this.giveLife = function giveLife(targetPlayer){
+//     targetPlayer.life += 1;
+//     console.log(this.name + " gave 1 life to " + targetPlayer.name);
+//   }
 
-}
+// }
 
-var sahil = new User();
-var lava = new User();
+// var sahil = new User();
+// var lava = new User();
 
-sahil.name = "sahil";
-lava.name = "lava";
+// sahil.name = "sahil";
+// lava.name = "lava";
 
-sahil.giveLife(lava);
+// sahil.giveLife(lava);
 
-console.log("Sahil's lives: " + sahil.life);
-console.log("Lavanya's lives: " + lava.life);
+// console.log("Sahil's lives: " + sahil.life);
+// console.log("Lavanya's lives: " + lava.life);
 
-User.prototype.uppercut = function uppercut(targetPlayer){
-  targetPlayer.life -= 3;
-  console.log(this.name + " just uppercutted " + targetPlayer.name);
-}
+// User.prototype.uppercut = function uppercut(targetPlayer){
+//   targetPlayer.life -= 3;
+//   console.log(this.name + " just uppercutted " + targetPlayer.name);
+// }
 
-lava.uppercut(sahil);
-console.log("Sahil's lives: " + sahil.life);
-console.log("Lavanya's lives: " + lava.life);
+// lava.uppercut(sahil);
+// console.log("Sahil's lives: " + sahil.life);
+// console.log("Lavanya's lives: " + lava.life);
 
-User.prototype.magic = 60;
+// User.prototype.magic = 60;
 
-console.log(sahil.magic);
-console.log(lava.magic);
+// console.log(sahil.magic);
+// console.log(lava.magic);
+
+var module2 = require("./module2");
+module2.movie1();
