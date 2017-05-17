@@ -109,3 +109,24 @@ console.log("Lavanya Lives: " + lava.life);
 User.prototype.magic = 60;
 console.log(sahil.magic);
 console.log(lava.magic);
+
+function User(){
+  this.name = "";
+  this.life = 100;
+  this.giveLife = function giveLife(targetPlayer){
+    targetPlayer.life += 1;
+    console.log(this.name + " gave 1 life to " + targetPlayer.name);
+  }
+
+}
+
+var sahil = new User();
+var lava = new User();
+
+sahil.name = "sahil";
+lava.name = "lava";
+
+sahil.giveLife(lava);
+
+console.log("Sahil's lives: " + sahil.life);
+console.log("Lavanya's lives: " + lava.life);
