@@ -178,14 +178,30 @@
 // console.log(__filename);
 
 var http = require("http");
+var fs = require("fs");
 
-http.createServer(function(request, response) {
-  console.log("Got a request @" + request.url);
-  response.writeHead(200, {"Context-Type": "text/plain"});
-  response.write("Hi! This is my webpage!");
+//404 response
+function send404Response(response, request){
+  response.write("Error 404, site not found!");
+  console.log("Got a Request @" + request.url);
   response.end();
+}
 
-}).listen(3000);
+function onRequest (request, response) {
+
+  
+  if( request.method == 'GET' && request.url == '/'){
+    console.log("Got a request!");
+  response.writeHead(200, {"Context-Type": "text/html"});
+  fs.createReadStream("./index.html").pipe(response);
+  }
+  else{
+    send404Response(response, request);
+  }
+
+}
+
+http.createServer(onRequest).listen(3000);
 console.log("Server is now running!");
 
 
