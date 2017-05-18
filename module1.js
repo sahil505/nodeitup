@@ -158,13 +158,22 @@
 // fs.writeFileSync("Corn.txt", "Corn is good for health");
 // console.log(fs.readFileSync("Corn.txt").toString());
 
-var path = require("path");
+// var path = require("path");
 
-var webisteHome = "Desktop/Sahil//coding_projects/nodeitup/module2.js";
-var webisteAbout = "Desktop/Sahil/coding_projects/nodeitup/module1.js";
+// var webisteHome = "Desktop/Sahil//coding_projects/nodeitup/module2.js";
+// var webisteAbout = "Desktop/Sahil/coding_projects/nodeitup/module1.js";
 
-console.log(path.normalize(webisteHome));
-console.log(path.normalize(webisteAbout));
-console.log(path.dirname(webisteAbout));
-console.log(path.basename(webisteAbout));
-console.log(path.extname(webisteAbout));
+// console.log(path.normalize(webisteHome));
+// console.log(path.normalize(webisteAbout));
+// console.log(path.dirname(webisteAbout));
+// console.log(path.basename(webisteAbout));
+// console.log(path.extname(webisteAbout));
+
+// setInterval(function(){
+//   console.log("Fuck You!!")
+
+// }, 2000)
+
+console.log(__dirname);
+console.log(__filename);
+
