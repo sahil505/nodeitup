@@ -156,3 +156,4 @@
 var fs = require("fs");
 
 fs.writeFileSync("Corn.txt", "Corn is good for health");
+console.log(fs.readFileSync("Corn.txt").toString());
