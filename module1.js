@@ -153,7 +153,15 @@
 // require("./sahil");
 // require("./lava");
 
-var fs = require("fs");
+// var fs = require("fs");
 
-fs.writeFileSync("Corn.txt", "Corn is good for health");
-console.log(fs.readFileSync("Corn.txt").toString());
+// fs.writeFileSync("Corn.txt", "Corn is good for health");
+// console.log(fs.readFileSync("Corn.txt").toString());
+
+var path = require("path");
+
+var webisteHome = "Desktop/Sahil//coding_projects/nodeitup/module2.js";
+var webisteAbout = "Desktop/Sahil/coding_projects/nodeitup/module1.js";
+
+console.log(path.normalize(webisteHome));
+console.log(path.normalize(webisteAbout));
