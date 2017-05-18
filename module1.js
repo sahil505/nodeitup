@@ -174,6 +174,18 @@
 
 // }, 2000)
 
-console.log(__dirname);
-console.log(__filename);
+// console.log(__dirname);
+// console.log(__filename);
+
+var http = require("http");
+
+http.createServer(function(request, response) {
+  console.log("Got a request @" + request.url);
+  response.writeHead(200, {"Context-Type": "text/plain"});
+  response.write("Hi! This is my webpage!");
+  response.end();
+
+}).listen(3000);
+console.log("Server is now running!");
+
 
