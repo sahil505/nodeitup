@@ -1,3 +1,5 @@
 var movie = require("./module2");
-movie.favMovie = "Good Will Hunting";
-console.log("Sahil's favorite movie is " + movie.favMovie);
+
+var sahilmovie = movie();
+sahilmovie.favMovie = "Good Will Hunting";
+console.log("Sahils favorite movie is " + sahilmovie.favMovie);

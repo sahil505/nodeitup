@@ -1,2 +1,4 @@
 var movie = require("./module2");
-console.log("Lava's favorite movie is " + movie.favMovie);
+
+var lavamovie = movie();
+console.log("Lava's fave movie is " + lavamovie.favMovie);
