@@ -177,31 +177,52 @@
 // console.log(__dirname);
 // console.log(__filename);
 
-var http = require("http");
-var fs = require("fs");
+// var http = require("http");
+// var fs = require("fs");
 
-//404 response
-function send404Response(response, request){
-  response.write("Error 404, site not found!");
-  console.log("Got a Request @" + request.url);
-  response.end();
-}
+// //404 response
+// function send404Response(response, request){
+//   response.write("Error 404, site not found!");
+//   console.log("Got a Request @" + request.url);
+//   response.end();
+// }
 
-function onRequest (request, response) {
+// function onRequest (request, response) {
 
   
-  if( request.method == 'GET' && request.url == '/'){
-    console.log("Got a request!");
-  response.writeHead(200, {"Context-Type": "text/html"});
-  fs.createReadStream("./index.html").pipe(response);
-  }
-  else{
-    send404Response(response, request);
-  }
+//   if( request.method == 'GET' && request.url == '/'){
+//     console.log("Got a request!");
+//   response.writeHead(200, {"Context-Type": "text/html"});
+//   fs.createReadStream("./index.html").pipe(response);
+//   }
+//   else{
+//     send404Response(response, request);
+//   }
 
+// }
+
+// http.createServer(onRequest).listen(3000);
+// console.log("Server is now running!");
+
+
+var connect = require('connect');
+var http = require('http');
+
+var app = connect();
+
+function doFirst(request, response, next){
+  console.log("This is first!");
+  next();
 }
 
-http.createServer(onRequest).listen(3000);
-console.log("Server is now running!");
+function doSecond(request, response, next){
+  console.log("This is second!");
+  next();
+}
 
+app.use(doFirst);
+app.use(doSecond);
+
+http.createServer(app).listen(3000);
+console.log("Server is now running!");
 
