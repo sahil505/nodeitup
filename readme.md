@@ -43,3 +43,8 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
 -prototyping
  - you can add functions to objects from outside the object as well, to any object whatsoever.
  - you can add properties to objects from outside the object.
+
+-object-factory
+ - an object that creates other objects or that returns objects.
+ - this is used to avoid sharing of objects in different modules.
+ - each module can now have their own custom objects by using object-factory.
