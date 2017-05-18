@@ -146,4 +146,6 @@
 // console.log(lava.magic);
 
 var module2 = require("./module2");
-module2.movie1();
+module2.printMovie1();
+module2.printMovie2();
+console.log(module2.var);
