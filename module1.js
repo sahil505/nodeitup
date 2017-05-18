@@ -205,23 +205,43 @@
 // console.log("Server is now running!");
 
 
+// var connect = require('connect');
+// var http = require('http');
+
+// var app = connect();
+
+// function doFirst(request, response, next){
+//   console.log("This is first!");
+//   next();
+// }
+
+// function doSecond(request, response, next){
+//   console.log("This is second!");
+//   next();
+// }
+
+// app.use(doFirst);
+// app.use(doSecond);
+
+// http.createServer(app).listen(3000);
+// console.log("Server is now running!");
+
+
 var connect = require('connect');
 var http = require('http');
 
 var app = connect();
 
-function doFirst(request, response, next){
-  console.log("This is first!");
-  next();
+function profile(request, response){
+  console.log("User requested profile!");
 }
 
-function doSecond(request, response, next){
-  console.log("This is second!");
-  next();
+function about(request, response){
+  console.log("User requested about!");
 }
 
-app.use(doFirst);
-app.use(doSecond);
+app.use('/profile', profile);
+app.use('/about', about);
 
 http.createServer(app).listen(3000);
 console.log("Server is now running!");
