@@ -145,7 +145,10 @@
 // console.log(sahil.magic);
 // console.log(lava.magic);
 
-var module2 = require("./module2");
-module2.printMovie1();
-module2.printMovie2();
-console.log(module2.var);
+// var module2 = require("./module2");
+// module2.printMovie1();
+// module2.printMovie2();
+// console.log(module2.var);
+
+require("./sahil");
+require("./lava");

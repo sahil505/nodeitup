@@ -1,13 +1,21 @@
 module.exports = {
-	printMovie1: function(){
-		console.log("Avatar");
-	},
-	printMovie2: function(){
-		console.log("Chappie");
-	},
-	var: "hello"
-
+	favMovie: ""	
 };
+
+
+
+
+
+// module.exports = {
+// 	printMovie1: function(){
+// 		console.log("Avatar");
+// 	},
+// 	printMovie2: function(){
+// 		console.log("Chappie");
+// 	},
+// 	var: "hello"
+
+// };
 
 
 
