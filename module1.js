@@ -150,5 +150,9 @@
 // module2.printMovie2();
 // console.log(module2.var);
 
-require("./sahil");
-require("./lava");
+// require("./sahil");
+// require("./lava");
+
+var fs = require("fs");
+
+fs.writeFileSync("Corn.txt", "Corn is good for health");
