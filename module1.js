@@ -165,3 +165,6 @@ var webisteAbout = "Desktop/Sahil/coding_projects/nodeitup/module1.js";
 
 console.log(path.normalize(webisteHome));
 console.log(path.normalize(webisteAbout));
+console.log(path.dirname(webisteAbout));
+console.log(path.basename(webisteAbout));
+console.log(path.extname(webisteAbout));
