@@ -240,8 +240,13 @@ function about(request, response){
   console.log("User requested about!");
 }
 
+function home(request, response){
+  console.log("User requested home!");
+}
+
 app.use('/profile', profile);
 app.use('/about', about);
+app.use('/', home);
 
 http.createServer(app).listen(3000);
 console.log("Server is now running!");
