@@ -21,14 +21,24 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-var person = {
-  name: 'Sahil',
-  age: 20
-} 
+var people = [
+    {
+      name: 'Sahil',
+      age: 20
+    },
+    {
+      name: 'Nimish',
+      age: 19
+    },
+    {
+      name: 'Sumit', 
+      age: 29
+    }
+] 
 
 //routehandler
 app.get('/', function(request, response){
-    response.json(person);
+    response.json(people);
 });
 
 //set port
