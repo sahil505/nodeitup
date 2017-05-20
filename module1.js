@@ -1,3 +1,26 @@
+var express = require('express');
+var bodyParser = require('body-parser');
+var path = require('path');
+
+var app = express();
+app.listen(3000, function() {
+  console.log("Server started on port 3000!");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var m2 = require('./module2');
 // m2();
 // var person = {
@@ -227,27 +250,28 @@
 // console.log("Server is now running!");
 
 
-var connect = require('connect');
-var http = require('http');
+// var connect = require('connect');
+// var http = require('http');
 
-var app = connect();
+// var app = connect();
 
-function profile(request, response){
-  console.log("User requested profile!");
-}
+// function profile(request, response){
+//   console.log("User requested profile!");
+// }
 
-function about(request, response){
-  console.log("User requested about!");
-}
+// function about(request, response){
+//   console.log("User requested about!");
+// }
 
-function home(request, response){
-  console.log("User requested home!");
-}
+// function home(request, response){
+//   console.log("User requested home!");
+// }
 
-app.use('/profile', profile);
-app.use('/about', about);
-app.use('/', home);
+// app.use('/profile', profile);
+// app.use('/about', about);
+// app.use('/', home);
 
-http.createServer(app).listen(3000);
-console.log("Server is now running!");
+// http.createServer(app).listen(3000);
+// console.log("Server is now running!");
+
 
