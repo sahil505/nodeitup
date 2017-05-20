@@ -4,10 +4,28 @@ var path = require('path');
 
 var app = express();
 
+//middleware - its order is also important, if you place it after app.get then its not gonna work.
+/*var logger = function(request, response, next){
+  console.log('Got a request!');
+  next();  
+}
+
+app.use(logger);
+*/
+
+//body parser middleware 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
+//Set Static Path
+app.use(express.static(path.join(__dirname, 'public')));
+
+//routehandler
 app.get('/', function(request, response){
     response.send('Hello World!');
 });
 
+//set port
 app.listen(3000, function() {
   console.log("Server started on port 3000!");
 });
