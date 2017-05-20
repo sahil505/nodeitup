@@ -48,3 +48,8 @@ a simple answer is the makers of nodejs took js that normally runs on the browse
  - an object that creates other objects or that returns objects.
  - this is used to avoid sharing of objects in different modules.
  - each module can now have their own custom objects by using object-factory.
+
+-ExpressJS
+ - minimalistic, open source web framework for NodeJS
+ - one of the most popular web framework of NodeJS, by far.
+ - uses model view controller(MVC) concepts 
