@@ -23,10 +23,43 @@ app.use(bodyParser.urlencoded({extended: false}));
 //Set Static Path
 app.use(express.static(path.join(__dirname, 'public')));
 
+var users = [
+    {
+      id: 1,
+      first_name: 'Sahil',
+      last_name: 'Khokhar',
+      age: 20,
+      email: 'sahilkhokhar505@gmail.com'
+    },
+    {
+      id: 2,
+      first_name: 'Nimish',
+      last_name: 'Khokhar',
+      age: 19,
+      email: 'nimishkhokhar1997@gmail.com'
+    },
+    {
+      id: 3,
+      first_name: 'Sumit',
+      last_name: 'Khokhar',
+      age: 29,
+      email: 'sumitkhokhar@gmail.com'
+    },
+    {
+      id: 4,
+      first_name: 'Vikas',
+      last_name: 'Khokhar',
+      age: 27,
+      email: 'vikaskhokhar@gmail.com'
+    }
+]
 
 //routehandler
 app.get('/', function(request, response){
-    response.render('index');
+    response.render('index',{
+      title: 'Express JS',
+      users: users
+    });
 });
 
 //set port
