@@ -20,9 +20,15 @@ app.use(bodyParser.urlencoded({extended: false}));
 //Set Static Path
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+var person = {
+  name: 'Sahil',
+  age: 20
+} 
+
 //routehandler
 app.get('/', function(request, response){
-    response.send('Hello World!');
+    response.json(person);
 });
 
 //set port
