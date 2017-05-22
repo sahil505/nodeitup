@@ -62,8 +62,14 @@ app.get('/', function(request, response){
     });
 });
 
-app.post('/users/add', function(){
-  console.log("Form Submitted!");
+app.post('/users/add', function(request, response){
+  var newUser = {
+    first_name: request.body.first_name,
+    last_name: request.body.last_name,
+    email: request.body.email
+  }
+
+  console.log(newUser);
 });
 
 //set port
